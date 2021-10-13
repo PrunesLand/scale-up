@@ -6,7 +6,6 @@ import { styles } from './styles'
 const Identity = () => {
 
     const classes = styles()
-
     return (
         <Box className={classes.root} >
             <Typography className={classes.title}>What is Scale Up?</Typography>

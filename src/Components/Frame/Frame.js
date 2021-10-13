@@ -39,7 +39,7 @@ const Frame = ({ children }) => {
         <Box>
             <Slide appear={false} direction='down' in={!trigger}>
                 <AppBar elevation={0} className={classes.appBar}>
-                    <Toolbar>
+                    <Toolbar className={classes.toolbar}>
                         <img src={logo} alt="scale up logo" className={classes.logo} />
                     </Toolbar>
 

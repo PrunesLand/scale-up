@@ -12,7 +12,7 @@ const Hero = () => {
         <Box className={classes.box} >
             <img src={herobg} alt="Hero background" className={classes.image} />
             <Typography className={classes.title} >Scale up your business.</Typography>
-            <Typography className={classes.content}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex numquam reprehenderit fugiat aliquid maiores!</Typography>
+            <Typography className={classes.content}>Envisioning a better market presence for Small and Medium-sized Businesses (SMB). </Typography>
         </Box>
     )
 }

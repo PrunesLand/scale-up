@@ -6,10 +6,15 @@ export const styles = makeStyles((theme) => ({
     },
     logo: {
         width: theme.spacing(25),
-        cursor: 'pointer'
+        cursor: 'pointer',
+
     },
     appBar: {
         background: (props) => props.bgColor,
         height: theme.spacing(10)
-    }
+    },
+    toolbar: {
+        display: 'flex',
+        justifyContent: 'left',
+    },
 }))

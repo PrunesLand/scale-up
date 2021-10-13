@@ -21,17 +21,20 @@ export const styles = makeStyles((theme) => ({
         color: '#fff'
     },
     content: {
-        textAlign: 'center',
-        margin: '0 15rem',
-        padding: '2rem',
-        fontSize: theme.typography.h4.fontSize,
+
+        fontSize: theme.typography.h5.fontSize,
+        textAlign: 'left',
+        padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
-            fontSize: theme.typography.h4.fontSize
+            fontSize: theme.typography.h4.fontSize,
+            margin: '0 15rem',
+            textAlign: 'center',
         }
     },
     title: {
-        fontSize: theme.typography.h4.fontSize,
+        fontSize: theme.typography.h3.fontSize,
         padding: theme.spacing(2),
+        color: theme.palette.primary.main,
         [theme.breakpoints.up('sm')]: {
             fontSize: theme.typography.h2.fontSize
         }

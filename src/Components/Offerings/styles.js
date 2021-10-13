@@ -2,31 +2,39 @@ import { makeStyles } from "@material-ui/core";
 
 export const styles = makeStyles((theme) => ({
     root: {
-        height: '80vh',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        textAlign: 'center'
+        textAlign: 'center',
+        [theme.breakpoints.up('sm')]: {
+            height: '80vh'
+        }
     },
     card: {
         width: theme.spacing(40),
-
-
+        padding: theme.spacing(2),
+        background: theme.palette.secondary.dark
     },
     cardWrp: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
-
+        [theme.breakpoints.up('sm')]: {
+            flexDirection: 'row',
+        }
     },
     content: {
         textAlign: 'left',
-        background: theme.palette.secondary.dark
     },
     title: {
-        padding: '2rem 0',
+        padding: theme.spacing(2),
         color: theme.palette.secondary.dark,
+        fontSize: theme.typography.h4.fontSize,
+        textAlign: 'left',
+
         [theme.breakpoints.up('sm')]: {
+            textAlign: 'center',
             fontSize: theme.typography.h4.fontSize
         }
     },

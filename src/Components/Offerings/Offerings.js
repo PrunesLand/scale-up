@@ -14,18 +14,20 @@ const Offerings = () => {
             <Box className={classes.cardWrp}>
 
                 {items.map(item => (
-                    <Paper className={classes.card} key={item.id} elevation={12}>
-                        <CardContent className={classes.content}>
-                            <CardMedia
-                                component='img'
-                                image={item.image}
-                                alt={item.alt}
-                                className={classes.images}
-                            />
-                            <Typography className={classes.cardTitle}>{item.title}</Typography>
-                            <Typography className={classes.cardDesc}>{item.description}</Typography>
-                        </CardContent>
-                    </Paper>
+                    <Box style={{ padding: '1rem' }} key={item.id}>
+                        <Paper className={classes.card} elevation={12}>
+                            <CardContent className={classes.content}>
+                                <CardMedia
+                                    component='img'
+                                    image={item.image}
+                                    alt={item.alt}
+                                    className={classes.images}
+                                />
+                                <Typography className={classes.cardTitle}>{item.title}</Typography>
+                                <Typography className={classes.cardDesc}>{item.description}</Typography>
+                            </CardContent>
+                        </Paper>
+                    </Box>
                 ))}
             </Box>
         </Box>
