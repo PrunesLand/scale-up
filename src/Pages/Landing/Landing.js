@@ -1,4 +1,4 @@
-import { Box, useTheme } from '@mui/system'
+import { Box, ThemeProvider, useTheme } from '@material-ui/core'
 import React from 'react'
 import Hero from '../../Components/Hero/Hero'
 import Identity from '../../Components/Identity/Identity'
@@ -12,27 +12,30 @@ const Landing = () => {
     const theme = useTheme()
 
     return (
-        <Box>
-            <Hero />
-            <Identity />
-            <Offerings />
-            <Layout left={true} bgColor={theme.palette.secondary.main} image={hireImage}>
-                <Typography variant='h4' sx={{ paddingBottom: '1rem' }}>
-                    Acquiring the best talent for your needs
-                </Typography>
-                <Typography>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
-                </Typography>
-            </Layout>
-            <Layout left={false} bgColor={theme.palette.secondary.light} image={buildingImage}>
-                <Typography variant='h4' sx={{ paddingBottom: '1rem' }}>
-                    Building Your brand with the latest technologies
-                </Typography>
-                <Typography>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
-                </Typography>
-            </Layout>
-        </Box>
+        <ThemeProvider theme={theme}>
+
+            <Box>
+                <Hero />
+                <Identity />
+                <Offerings />
+                <Layout left={true} bgColor={theme.palette.secondary.main} image={hireImage}>
+                    <Typography variant='h4' sx={{ paddingBottom: '1rem', color: theme.palette.primary.main }}>
+                        Acquiring the best result for your business
+                    </Typography>
+                    <Typography variant='h6' sx={{ color: theme.palette.secondary.main }}>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
+                    </Typography>
+                </Layout>
+                <Layout left={false} bgColor={theme.palette.secondary.light} image={buildingImage}>
+                    <Typography variant='h4' sx={{ paddingBottom: '1rem', color: theme.palette.primary.main }}>
+                        Building Your brand with the latest technologies
+                    </Typography>
+                    <Typography variant='h6' sx={{ color: theme.palette.secondary.main }}>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
+                    </Typography>
+                </Layout>
+            </Box >
+        </ThemeProvider>
     )
 }
 

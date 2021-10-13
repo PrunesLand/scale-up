@@ -1,5 +1,7 @@
-import { createTheme } from "@mui/material";
-import { ThemeProvider } from "@mui/system";
+
+
+import { ThemeProvider } from "@material-ui/styles";
+import { createTheme } from "@material-ui/core";
 import Home from "./Pages/Home/Home";
 
 const theme = createTheme({
@@ -14,6 +16,9 @@ const theme = createTheme({
       light: '#dcdcdc',
       dark: '#7b7b7b'
     }
+  },
+  typography: {
+    fontFamily: "'Be Vietnam','Roboto', sans-serif;"
   }
 })
 

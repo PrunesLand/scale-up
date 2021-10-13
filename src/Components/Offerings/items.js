@@ -1,7 +1,7 @@
 import webDev from '../../Images/undraw/webDev.svg'
 import webDesign from '../../Images/undraw/webDesign.svg'
 import graphicDesign from '../../Images/undraw/graphicDesign.svg'
-
+import typewritting from '../../Images/undraw/typewritting.svg'
 export const items = [
     {
         id: 1,
@@ -23,5 +23,12 @@ export const items = [
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quasi itaque sed, officiis alias possimus',
         image: graphicDesign,
         alt: 'Graphic Design'
+    },
+    {
+        id: 4,
+        title: 'Typewritting',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quasi itaque sed, officiis alias possimus',
+        image: typewritting,
+        alt: 'Typewritting'
     },
 ]

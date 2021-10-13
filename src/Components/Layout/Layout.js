@@ -1,5 +1,5 @@
-import { Paper } from '@mui/material'
-import { Box } from '@mui/system'
+import { Paper } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import React from 'react'
 import { styles } from './Style'
 

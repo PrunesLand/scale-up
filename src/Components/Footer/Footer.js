@@ -1,6 +1,6 @@
-import { Divider, Typography } from '@mui/material'
+import { Divider, Typography } from '@material-ui/core'
 import React from 'react'
-import { Box } from '@mui/system'
+import { Box } from '@material-ui/core'
 import { styles } from './Styles'
 // import contactLogo from '../../Images/undraw/contact.svg'
 

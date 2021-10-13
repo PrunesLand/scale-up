@@ -1,8 +1,9 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core";
 
 export const styles = makeStyles((theme) => ({
     root: {
         height: '20vh',
+        color: theme.palette.secondary.main
 
     },
     content: {
@@ -10,7 +11,7 @@ export const styles = makeStyles((theme) => ({
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'start',
-        padding: '2rem 0'
+        padding: '2rem 0',
     },
     contactWrp: {
 

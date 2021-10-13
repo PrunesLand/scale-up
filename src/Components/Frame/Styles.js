@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core";
 
 export const styles = makeStyles((theme) => ({
     root: {
@@ -8,7 +8,8 @@ export const styles = makeStyles((theme) => ({
         width: theme.spacing(25),
         cursor: 'pointer'
     },
-    // toolbar: {
-    //     background: (props) => props.bgColor,
-    // }
+    appBar: {
+        background: (props) => props.bgColor,
+        height: theme.spacing(10)
+    }
 }))

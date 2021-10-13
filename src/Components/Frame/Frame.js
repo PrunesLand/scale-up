@@ -1,5 +1,5 @@
-import { AppBar, Container, Slide, Toolbar, useScrollTrigger } from '@mui/material'
-import { Box } from '@mui/system'
+import { AppBar, Container, Slide, Toolbar, useScrollTrigger } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import { styles } from './Styles'
@@ -30,22 +30,19 @@ const Frame = ({ children }) => {
         }
     }
 
-
     useEffect(() => {
         changeBackground()
-
         window.addEventListener('scroll', changeBackground)
     })
-
-
 
     return (
         <Box>
             <Slide appear={false} direction='down' in={!trigger}>
-                <AppBar elevation={0} sx={{ height: '10vh', background: bgColor }}>
-                    <Toolbar >
+                <AppBar elevation={0} className={classes.appBar}>
+                    <Toolbar>
                         <img src={logo} alt="scale up logo" className={classes.logo} />
                     </Toolbar>
+
                 </AppBar>
             </Slide>
             <Box>
