@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 
 export const styles = makeStyles((theme) => ({
     root: {
-        height: '80vh',
+        height: '70vh',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
@@ -10,14 +10,14 @@ export const styles = makeStyles((theme) => ({
         background: (props) => props.bgColor
     },
     smContainer: {
-        width: '35%',
+        width: '45%',
         height: '100%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
     },
     lgContainer: {
-        width: '65%',
+        width: '55%',
         height: '100%',
         display: 'flex',
         justifyContent: 'center',
@@ -25,6 +25,9 @@ export const styles = makeStyles((theme) => ({
     },
     card: {
         width: theme.spacing(65),
-        padding: theme.spacing(2)
+        padding: theme.spacing(4)
+    },
+    image: {
+        width: theme.spacing(60)
     }
 }))
