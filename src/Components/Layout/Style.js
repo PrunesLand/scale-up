@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 
 export const styles = makeStyles((theme) => ({
     root: {
-        height: '70vh',
+        height: '80vh',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',

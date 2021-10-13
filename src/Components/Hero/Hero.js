@@ -31,7 +31,7 @@ const Hero = () => {
     return (
         <Box className={classes.box} >
             <img src={herobg} alt="Hero background" className={classes.image} />
-            <Typography variant='h2' sx={{ color: '#fff' }}>This is the Hero Section</Typography>
+            <Typography variant='h2' sx={{ color: '#fff' }}>Scale up your business.</Typography>
             <Typography variant='h4' sx={{ textAlign: 'center', margin: '0 15rem', color: '#fff', padding: '2rem' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex numquam reprehenderit fugiat aliquid maiores!</Typography>
         </Box>
     )

@@ -4,5 +4,11 @@ export const styles = makeStyles((theme) => ({
     root: {
 
     },
-    toolbar: theme.mixins.toolbar
+    logo: {
+        width: theme.spacing(25),
+        cursor: 'pointer'
+    },
+    // toolbar: {
+    //     background: (props) => props.bgColor,
+    // }
 }))
