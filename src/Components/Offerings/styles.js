@@ -11,7 +11,6 @@ export const styles = makeStyles((theme) => ({
         }
     },
     card: {
-        width: theme.spacing(40),
         padding: theme.spacing(2),
         background: theme.palette.secondary.dark
     },
