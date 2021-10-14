@@ -2,9 +2,8 @@ import { Divider, Typography } from '@material-ui/core'
 import React from 'react'
 import { Box } from '@material-ui/core'
 import { styles } from './Styles'
-// import contactLogo from '../../Images/undraw/contact.svg'
-
-
+import instagram from '../../Images/icons/instagram.svg'
+import whatsapp from '../../Images/icons/whatsapp.svg'
 const Footer = () => {
 
     const classes = styles()
@@ -12,9 +11,11 @@ const Footer = () => {
         <Box className={classes.root}>
             <Box className={classes.content}>
                 <Box className={classes.contactWrp}>
-                    {/* <img src={contactLogo} alt="contact logo" className={classes.contactLogo} /> */}
-                    <Typography>Contact us:</Typography>
-                    <Typography>scaleupOfficial.com</Typography>
+                    <Typography>Link with us on:</Typography>
+                    <Box className={classes.iconWrp}>
+                        <img src={whatsapp} alt="whatsapp logo" className={classes.icon} />
+                        <img src={instagram} alt="instagram logo" className={classes.icon} />
+                    </Box>
                     <Typography>+62 000 000</Typography>
                     <Typography>@scaleupOfficial</Typography>
                 </Box>
@@ -25,7 +26,7 @@ const Footer = () => {
             </Box>
             <Divider />
             <Box sx={{ textAlign: 'center', padding: '1rem 0' }}>
-                <Typography>Scale Up</Typography>
+                <Typography align='center' > &copy;{new Date().getFullYear()} Scale Up</Typography>
             </Box>
         </Box>
     )

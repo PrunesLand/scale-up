@@ -25,5 +25,15 @@ export const styles = makeStyles((theme) => ({
     },
     contactLogo: {
         width: theme.spacing(25)
+    },
+    iconWrp: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    icon: {
+        width: theme.spacing(3.5),
+        paddingRight: theme.spacing(1),
+        paddingTop: theme.spacing(1),
+        paddingBottom: theme.spacing(1)
     }
 }))
