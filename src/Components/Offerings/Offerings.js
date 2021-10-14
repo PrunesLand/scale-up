@@ -16,7 +16,7 @@ const Offerings = () => {
 
                 {items.map(item => (
                     <Box style={{ padding: '1rem' }} key={item.id}>
-                        <Fade delay={parseInt(`${item.id}00`)} bottom>
+                        <Fade delay={parseInt(`${item.id}00`)} left>
                             <Paper className={classes.card} elevation={12}>
                                 <CardContent className={classes.content}>
                                     <CardMedia
