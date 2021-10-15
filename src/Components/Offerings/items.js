@@ -26,9 +26,9 @@ export const items = [
     },
     {
         id: 4,
-        title: 'Typewritting',
+        title: 'Copywritting',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quasi itaque sed, officiis alias possimus',
         image: typewritting,
-        alt: 'Typewritting'
+        alt: 'Copywritting'
     },
 ]

@@ -38,5 +38,14 @@ export const styles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             fontSize: theme.typography.h2.fontSize
         }
+    },
+    iconContainer: {
+        marginTop: '5rem'
+    },
+    button: {
+        fontSize: theme.spacing(2),
+        color: theme.palette.primary.main,
+
+
     }
 }))

@@ -7,6 +7,8 @@ import Offerings from '../../Components/Offerings/Offerings'
 import hireImage from '../../Images/undraw/hire.svg'
 import buildingImage from '../../Images/undraw/building.svg'
 import { Typography } from '@mui/material'
+import { Element } from "react-scroll";
+import Contact from '../../Components/CTA/Contact'
 const Landing = () => {
 
     const theme = useTheme()
@@ -17,7 +19,9 @@ const Landing = () => {
             <Box>
                 <Hero />
                 <Identity />
-                <Offerings />
+                <Element name='offerings'>
+                    <Offerings />
+                </Element>
                 <Layout left={true} bgColor={theme.palette.secondary.main} image={hireImage}>
                     <Typography variant='h4' sx={{ paddingBottom: '1rem', color: theme.palette.primary.main }}>
                         Acquiring the best result for your business
@@ -34,6 +38,7 @@ const Landing = () => {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
                     </Typography>
                 </Layout>
+                <Contact />
             </Box >
         </ThemeProvider>
     )
