@@ -38,7 +38,8 @@ export const styles = makeStyles((theme) => ({
     },
     card: {
         maxWidth: theme.spacing(65),
-        padding: theme.spacing(4)
+        padding: theme.spacing(4),
+
     },
     image: {
         width: theme.spacing(40),

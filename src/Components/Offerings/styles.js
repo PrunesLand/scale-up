@@ -12,7 +12,8 @@ export const styles = makeStyles((theme) => ({
     },
     card: {
         padding: theme.spacing(1),
-        background: theme.palette.secondary.dark
+        background: theme.palette.secondary.dark,
+        minHeight: theme.spacing(50)
     },
     cardWrp: {
         display: 'flex',
@@ -48,7 +49,8 @@ export const styles = makeStyles((theme) => ({
         alignText: 'left',
         [theme.breakpoints.up('sm')]: {
             fontSize: theme.typography.body2.fontSize
-        }
+        },
+
     },
     images: {
         padding: '1rem',

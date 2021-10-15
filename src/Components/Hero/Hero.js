@@ -17,7 +17,7 @@ const Hero = () => {
             <Typography className={classes.content}>Envisioning a better market presence for Small and Medium-sized Businesses (SMB). </Typography>
             <Box className={classes.iconContainer}>
                 <Link to='offerings' smooth>
-                    <Button variant='contained' className={classes.button}>Our Offers</Button>
+                    <Button variant='contained' className={classes.button}>Our services</Button>
                 </Link>
 
             </Box>

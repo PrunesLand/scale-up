@@ -3,17 +3,39 @@ import { makeStyles } from "@material-ui/core";
 export const styles = makeStyles((theme) => ({
     root: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh'
+        height: '90vh',
+        [theme.breakpoints.up('sm')]: {
+            flexDirection: 'column',
+        },
+
+    },
+    content: {
+        display: 'flex',
+        flexDirection: 'column',
+        [theme.breakpoints.up('sm')]: {
+            flexDirection: 'row',
+        },
+        padding: theme.spacing(5)
+    },
+    header: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '0 3rem'
     },
     title: {
-        fontSize: theme.spacing(5),
-        padding: theme.spacing(2)
+        fontSize: theme.typography.h4.fontSize,
+        padding: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            fontSize: theme.typography.h2.fontSize
+        }
     },
     image: {
-        height: theme.spacing(30),
+        width: theme.spacing(30),
         maxWidth: theme.spacing(65),
         padding: theme.spacing(2)
     },
@@ -29,6 +51,9 @@ export const styles = makeStyles((theme) => ({
     wrapper: {
         display: 'flex',
         flexDirection: 'column',
+        paddingLeft: theme.spacing(2),
+        paddingTop: theme.spacing(1)
+
     },
     contactWrapper: {
         display: 'flex',
@@ -36,6 +61,9 @@ export const styles = makeStyles((theme) => ({
         paddingBottom: theme.spacing(1),
         alignItems: 'center',
         justifyContent: 'left'
+    },
+    text: {
+        fontSize: theme.typography.h6.fontSize
     }
 
 }))

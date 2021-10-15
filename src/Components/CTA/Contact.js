@@ -11,23 +11,26 @@ const Contact = () => {
     const classes = styles()
     return (
         <Box className={classes.root}>
-            <Box>
-                <Typography className={classes.title} >Collaborate with us!</Typography>
-                <img src={collab} alt="connect with us" className={classes.image} />
-            </Box>
-            <Box className={classes.contactInfo}>
-                <Box className={classes.wrapper}>
-                    <Typography variant='h5'>Follow us on Instagram!</Typography>
-                    <Box className={classes.contactWrapper}>
-                        <img src={instagram} alt="instagram logo" className={classes.logo} />
-                        <Typography variant='body1'>@scaleupOfficial</Typography>
-                    </Box>
+            <Typography className={classes.title} >Collaborate with us!</Typography>
+            <Box className={classes.content}>
+
+                <Box className={classes.header}>
+                    <img src={collab} alt="connect with us" className={classes.image} />
                 </Box>
-                <Box className={classes.wrapper}>
-                    <Typography variant='h5'>Contact our whatsapp business number!</Typography>
-                    <Box className={classes.contactWrapper}>
-                        <img src={whatsapp} alt="whatsapp logo" className={classes.logo} />
-                        <Typography variant='body1'>+62 000 000</Typography>
+                <Box className={classes.contactInfo}>
+                    <Box className={classes.wrapper}>
+                        <Typography className={classes.text}>Follow us on Instagram!</Typography>
+                        <Box className={classes.contactWrapper}>
+                            <img src={instagram} alt="instagram logo" className={classes.logo} />
+                            <Typography variant='body1'>@scaleupOfficial</Typography>
+                        </Box>
+                    </Box>
+                    <Box className={classes.wrapper}>
+                        <Typography className={classes.text}>Contact our whatsapp business number!</Typography>
+                        <Box className={classes.contactWrapper}>
+                            <img src={whatsapp} alt="whatsapp logo" className={classes.logo} />
+                            <Typography variant='body1'>+62 000 000</Typography>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
