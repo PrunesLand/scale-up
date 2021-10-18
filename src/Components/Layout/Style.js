@@ -11,7 +11,7 @@ export const styles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             flexDirection: 'row',
-            height: '70vh',
+            height: '90vh',
         }
     },
     smContainer: {
