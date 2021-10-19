@@ -15,10 +15,10 @@ export const styles = makeStyles((theme) => ({
     content: {
         display: 'flex',
         flexDirection: 'column',
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
             flexDirection: 'row',
         },
-        padding: theme.spacing(5)
+
     },
     header: {
         display: 'flex',

@@ -17,19 +17,27 @@ export const styles = makeStyles((theme) => ({
     toolbar: {
         display: 'flex',
         justifyContent: 'space-between',
-        height: theme.spacing(10)
+        height: theme.spacing(10),
+
     },
     nav: {
         color: '#fff',
-        display: 'flex',
         flexDirection: 'row',
+        display: 'none',
+        [theme.breakpoints.up('md')]: {
+            display: 'flex'
+        }
 
     },
     navLinks: {
         fontSize: theme.typography.h5.fontSize,
         paddingRight: theme.spacing(2),
         cursor: 'pointer',
-        color: theme.palette.primary.main
+        color: theme.palette.primary.main,
+        '&:hover': {
+            color: theme.palette.secondary.main,
+
+        },
     },
     trans: {
         background: 'transparent'
@@ -37,5 +45,20 @@ export const styles = makeStyles((theme) => ({
     filled: {
         background: '#fff',
         color: '#000'
-    }
+    },
+    drawer: {
+        display: 'block',
+        [theme.breakpoints.up('md')]: {
+            display: 'none'
+        }
+    },
+    iconLogo: {
+        width: theme.spacing(10),
+        padding: theme.spacing(3)
+    },
+    list: {
+        width: '8rem',
+        textAlign: 'center'
+    },
+
 }))

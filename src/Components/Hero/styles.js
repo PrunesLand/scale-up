@@ -25,11 +25,16 @@ export const styles = makeStyles((theme) => ({
         fontSize: theme.typography.h5.fontSize,
         textAlign: 'left',
         padding: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('lg')]: {
             fontSize: theme.typography.h4.fontSize,
             margin: '0 15rem',
             textAlign: 'center',
-        }
+        },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: theme.typography.h4.fontSize,
+            margin: '0 5rem',
+            textAlign: 'center',
+        },
     },
     title: {
         fontSize: theme.typography.h3.fontSize,

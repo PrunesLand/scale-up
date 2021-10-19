@@ -9,7 +9,7 @@ export const styles = makeStyles((theme) => ({
         alignItems: 'center',
         background: (props) => props.bgColor,
         padding: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
             flexDirection: 'row',
             height: '90vh',
         }

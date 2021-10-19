@@ -1,4 +1,4 @@
-import { CardContent, CardMedia, Paper, Typography } from '@material-ui/core'
+import { CardContent, CardMedia, Divider, Paper, Typography } from '@material-ui/core'
 import { Box } from '@material-ui/core'
 import React from 'react'
 import { items } from './items'
@@ -19,13 +19,10 @@ const Offerings = () => {
                         <Fade delay={parseInt(`${item.id}00`)} left>
                             <Paper className={classes.card} elevation={12}>
                                 <CardContent className={classes.content}>
-                                    <CardMedia
-                                        component='img'
-                                        image={item.image}
-                                        alt={item.alt}
-                                        className={classes.images}
-                                    />
+                                    <img src={item.image} alt={item.alt} className={classes.images} />
                                     <Typography className={classes.cardTitle}>{item.title}</Typography>
+                                    <Divider />
+                                    <br />
                                     <Typography className={classes.cardDesc}>{item.description}</Typography>
                                 </CardContent>
                             </Paper>

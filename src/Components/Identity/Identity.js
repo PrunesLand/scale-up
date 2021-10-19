@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core'
+import { Card, Typography } from '@material-ui/core'
 import { Box } from '@material-ui/core'
 import React from 'react'
 import { styles } from './styles'
@@ -13,7 +13,9 @@ const Identity = () => {
                 <Typography className={classes.title}>What is Scale Up?</Typography>
             </Fade>
             <Fade bottom delay={1000}>
-                <Typography className={classes.content}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti id, enim quidem non nisi eligendi delectus! Dicta, alias provident?</Typography>
+                <Card className={classes.card}>
+                    <Typography className={classes.content}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti id, enim quidem non nisi eligendi delectus! Dicta, alias provident?</Typography>
+                </Card>
             </Fade>
 
 

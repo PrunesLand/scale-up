@@ -16,11 +16,11 @@ export const styles = makeStyles((theme) => ({
     },
     title: {
         fontSize: theme.typography.h4.fontSize,
-        paddingBottom: theme.spacing(2),
+        paddingBottom: theme.spacing(4),
         flexDirection: 'row',
         textAlign: 'left',
-        padding: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
+
+        [theme.breakpoints.up('md')]: {
             fontSize: theme.typography.h3.fontSize,
             margin: '0 20rem',
             textAlign: 'center',
@@ -32,17 +32,17 @@ export const styles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             fontSize: theme.typography.h5.fontSize,
-            margin: '0 20rem',
             textAlign: 'center',
         }
     },
     card: {
-        height: '60vh',
-        background: theme.palette.secondary.main,
+        height: theme.spacing(25),
+        maxWidth: theme.spacing(90),
+        background: theme.palette.secondary.light,
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
-
+        padding: theme.spacing(2)
 
     }
 }))

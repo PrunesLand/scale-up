@@ -30,7 +30,7 @@ const Landing = () => {
                     <Typography variant='h4' sx={{ paddingBottom: '1rem', color: theme.palette.primary.main }}>
                         Acquiring the best result for your business
                     </Typography>
-                    <Typography variant='h6' sx={{ color: theme.palette.secondary.main }}>
+                    <Typography variant='h6' sx={{ color: theme.palette.secondary.dark }}>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
                     </Typography>
                 </Layout>
@@ -38,7 +38,7 @@ const Landing = () => {
                     <Typography variant='h4' sx={{ paddingBottom: '1rem', color: theme.palette.primary.main }}>
                         Building Your brand with the latest technologies
                     </Typography>
-                    <Typography variant='h6' sx={{ color: theme.palette.secondary.main }}>
+                    <Typography variant='h6' sx={{ color: theme.palette.secondary.dark }}>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
                     </Typography>
                 </Layout>
