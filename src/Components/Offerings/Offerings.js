@@ -1,4 +1,4 @@
-import { CardContent, CardMedia, Divider, Paper, Typography } from '@material-ui/core'
+import { CardContent, Divider, Paper, Typography } from '@material-ui/core'
 import { Box } from '@material-ui/core'
 import React from 'react'
 import { items } from './items'

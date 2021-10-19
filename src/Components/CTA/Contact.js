@@ -30,6 +30,7 @@ const Contact = () => {
                         <Box className={classes.contactWrapper}>
                             <img src={whatsapp} alt="whatsapp logo" className={classes.logo} />
                             <Typography variant='body1'>+62 000 000</Typography>
+
                         </Box>
                     </Box>
                 </Box>
