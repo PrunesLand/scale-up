@@ -8,12 +8,14 @@ const Identity = () => {
     const classes = styles()
     return (
         <Box className={classes.root} >
+
             <Fade bottom delay={500}>
                 <Typography className={classes.title}>What is Scale Up?</Typography>
             </Fade>
             <Fade bottom delay={1000}>
                 <Typography className={classes.content}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti id, enim quidem non nisi eligendi delectus! Dicta, alias provident?</Typography>
             </Fade>
+
 
         </Box>
     )

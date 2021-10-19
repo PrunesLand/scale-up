@@ -11,7 +11,7 @@ const Offerings = () => {
 
     return (
         <Box className={classes.root}>
-            <Typography className={classes.title} >Our Services:</Typography>
+            <Typography className={classes.title} >Our Services</Typography>
             <Box className={classes.cardWrp}>
 
                 {items.map(item => (

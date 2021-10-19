@@ -17,8 +17,12 @@ const Landing = () => {
         <ThemeProvider theme={theme}>
 
             <Box>
-                <Hero />
-                <Identity />
+                <Element name='top'>
+                    <Hero />
+                </Element>
+                <Element name='about'>
+                    <Identity />
+                </Element>
                 <Element name='offerings'>
                     <Offerings />
                 </Element>
@@ -38,7 +42,9 @@ const Landing = () => {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequatur nam animi quis quibusdam tempore, cum eligendi rerum fugit quisquam ducimus architecto, porro aliquam repudiandae accusantium beatae nobis, minus libero.
                     </Typography>
                 </Layout>
-                <Contact />
+                <Element name='contact'>
+                    <Contact />
+                </Element>
             </Box >
         </ThemeProvider>
     )

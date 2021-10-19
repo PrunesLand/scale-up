@@ -8,13 +8,34 @@ export const styles = makeStyles((theme) => ({
         width: theme.spacing(25),
         cursor: 'pointer',
 
+
     },
-    appBar: {
-        background: (props) => props.bgColor,
-        height: theme.spacing(10)
-    },
+    // appBar: {
+    //     background: (props) => props.Color,
+
+    // },
     toolbar: {
         display: 'flex',
-        justifyContent: 'left',
+        justifyContent: 'space-between',
+        height: theme.spacing(10)
     },
+    nav: {
+        color: '#fff',
+        display: 'flex',
+        flexDirection: 'row',
+
+    },
+    navLinks: {
+        fontSize: theme.typography.h5.fontSize,
+        paddingRight: theme.spacing(2),
+        cursor: 'pointer',
+        color: theme.palette.primary.main
+    },
+    trans: {
+        background: 'transparent'
+    },
+    filled: {
+        background: '#fff',
+        color: '#000'
+    }
 }))

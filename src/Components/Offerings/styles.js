@@ -6,13 +6,15 @@ export const styles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         textAlign: 'center',
+        justifyContent: 'center',
         [theme.breakpoints.up('sm')]: {
-            height: '80vh'
-        }
+            height: '100vh'
+        },
+        background: theme.palette.secondary.dark
     },
     card: {
         padding: theme.spacing(1),
-        background: theme.palette.secondary.dark,
+        background: theme.palette.secondary.light,
         minHeight: theme.spacing(50)
     },
     cardWrp: {
@@ -28,24 +30,24 @@ export const styles = makeStyles((theme) => ({
         textAlign: 'left',
     },
     title: {
-        padding: theme.spacing(2),
-        color: theme.palette.secondary.dark,
+        paddingBottom: theme.spacing(4),
+        color: theme.palette.common.white,
         fontSize: theme.typography.h4.fontSize,
         textAlign: 'left',
 
         [theme.breakpoints.up('sm')]: {
             textAlign: 'center',
-            fontSize: theme.typography.h4.fontSize
+            fontSize: theme.typography.h3.fontSize
         }
     },
     cardTitle: {
         padding: '0.5rem 0',
-        color: theme.palette.primary.main,
+        color: theme.palette.common.black,
         fontSize: theme.spacing(4),
         alignText: 'left'
     },
     cardDesc: {
-        color: theme.palette.secondary.light,
+        color: theme.palette.common.black,
         alignText: 'left',
         [theme.breakpoints.up('sm')]: {
             fontSize: theme.typography.body2.fontSize

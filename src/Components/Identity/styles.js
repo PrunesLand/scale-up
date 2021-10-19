@@ -2,12 +2,13 @@ import { makeStyles } from "@material-ui/core";
 
 export const styles = makeStyles((theme) => ({
     root: {
-        height: '90vh',
+        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'left',
-        color: theme.palette.secondary.dark,
+        color: theme.palette.common.black,
+        margin: theme.spacing(5),
         [theme.breakpoints.up('sm')]: {
             alignItems: 'center',
         }
@@ -20,7 +21,7 @@ export const styles = makeStyles((theme) => ({
         textAlign: 'left',
         padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
-            fontSize: theme.typography.h5.fontSize,
+            fontSize: theme.typography.h3.fontSize,
             margin: '0 20rem',
             textAlign: 'center',
         }
@@ -34,5 +35,14 @@ export const styles = makeStyles((theme) => ({
             margin: '0 20rem',
             textAlign: 'center',
         }
+    },
+    card: {
+        height: '60vh',
+        background: theme.palette.secondary.main,
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+
+
     }
 }))
