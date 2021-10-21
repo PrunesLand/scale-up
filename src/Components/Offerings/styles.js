@@ -16,6 +16,7 @@ export const styles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         background: theme.palette.common.white,
         minHeight: theme.spacing(50),
+        maxHeight: theme.spacing(50),
         maxWidth: theme.spacing(60),
     },
     cardWrp: {
