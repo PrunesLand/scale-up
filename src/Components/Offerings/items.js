@@ -6,28 +6,28 @@ export const items = [
     {
         id: 1,
         title: 'Product Design',
-        description: 'Visualize your Ideas by prototyping its Minimum Viable Product to validate your market quickly.',
+        description: 'Visualize your ideas by designing a 2D product prototype to quickly validate your market.',
         image: webDesign,
         alt: 'Web Designing'
     },
     {
         id: 2,
         title: 'Web Development',
-        description: 'We build responsive & scalable website for your business and needs using in demand web technologies.',
+        description: 'Build responsive & scalable website for your business and needs using in demand web technologies.',
         image: webDev,
         alt: 'Web Developing'
     },
     {
         id: 3,
         title: 'Logo Design',
-        description: 'We help to develop a unique brand identity for your business and needs.',
+        description: 'Differentiate and develop a unique brand identity for your business and needs.',
         image: graphicDesign,
         alt: 'Graphic Design'
     },
     {
         id: 4,
         title: 'Copywritting',
-        description: 'We create written content to deliver your business message effectively by increasing brand awareness and ultimately persuade a person or group to take a particular action.',
+        description: 'Create persuasive written content to deliver your business message effectively.',
         image: typewritting,
         alt: 'Copywritting'
     },

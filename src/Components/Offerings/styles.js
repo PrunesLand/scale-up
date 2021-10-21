@@ -7,13 +7,13 @@ export const styles = makeStyles((theme) => ({
         flexDirection: 'column',
         textAlign: 'center',
         justifyContent: 'center',
-        [theme.breakpoints.up('md')]: {
+        [theme.breakpoints.up('lg')]: {
             height: '100vh'
         },
         background: theme.palette.secondary.dark
     },
     card: {
-        padding: theme.spacing(1),
+
         background: theme.palette.common.white,
         minHeight: theme.spacing(50),
         maxHeight: theme.spacing(50),
@@ -25,7 +25,7 @@ export const styles = makeStyles((theme) => ({
         justifyContent: 'space-around',
         alignItems: 'center',
 
-        [theme.breakpoints.up('md')]: {
+        [theme.breakpoints.up('lg')]: {
             flexDirection: 'row',
         }
     },
@@ -63,8 +63,10 @@ export const styles = makeStyles((theme) => ({
     cardDesc: {
         color: theme.palette.secondary.dark,
         alignText: 'left',
+        paddingTop: theme.spacing(1),
+        fontSize: theme.typography.body1.fontSize,
         [theme.breakpoints.up('md')]: {
-            fontSize: theme.typography.body2.fontSize
+            fontSize: theme.spacing(2),
         },
 
     },
