@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core'
+import { Button, Typography } from '@material-ui/core'
 import { Box } from '@mui/system'
 import React from 'react'
 import collab from '../../Images/undraw/collab.svg'
@@ -22,16 +22,16 @@ const Contact = () => {
                         <Typography className={classes.text}>Follow us on Instagram!</Typography>
                         <Box className={classes.contactWrapper}>
                             <img src={instagram} alt="instagram logo" className={classes.logo} />
-                            <Typography variant='body1'>@scaleupOfficial</Typography>
+                            <Typography variant='body1'>@scaleup.official</Typography>
                         </Box>
                     </Box>
                     <Box className={classes.wrapper}>
                         <Typography className={classes.text}>Contact our whatsapp business number!</Typography>
                         <Box className={classes.contactWrapper}>
                             <img src={whatsapp} alt="whatsapp logo" className={classes.logo} />
-                            <Typography variant='body1'>+62 000 000</Typography>
-
+                            <Typography variant='body1'>+62 856 9229 3738</Typography>
                         </Box>
+                        <Button href='https://wa.me/6285692293738' target='_blank' disableRipple variant='contained' className={classes.whatsappButton}>Contact Us Now</Button>
                     </Box>
                 </Box>
             </Box>

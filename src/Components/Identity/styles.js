@@ -29,14 +29,14 @@ export const styles = makeStyles((theme) => ({
     content: {
         fontSize: theme.typography.h6.fontSize,
         textAlign: 'left',
-        padding: theme.spacing(2),
+        padding: theme.spacing(1),
         [theme.breakpoints.up('sm')]: {
             fontSize: theme.typography.h5.fontSize,
             textAlign: 'center',
         }
     },
     card: {
-        height: theme.spacing(25),
+
         maxWidth: theme.spacing(90),
         background: theme.palette.secondary.light,
         display: 'flex',

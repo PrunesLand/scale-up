@@ -6,7 +6,7 @@ import { styles } from './Styles'
 import logo from '../../Images/logo.png'
 import { Link } from "react-scroll";
 import { RiMenu5Line } from 'react-icons/ri'
-import iconLogo from '../../Images/iconLogo.png'
+import iconLogo from '../../Images/iconLogo.svg'
 
 const Frame = ({ children }) => {
 

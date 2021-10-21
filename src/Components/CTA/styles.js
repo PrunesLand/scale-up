@@ -18,14 +18,18 @@ export const styles = makeStyles((theme) => ({
         [theme.breakpoints.up('md')]: {
             flexDirection: 'row',
         },
+        alignItems: 'center'
 
     },
     header: {
         display: 'flex',
-        flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
-        padding: '0 3rem'
+        width: '100%',
+        [theme.breakpoints.up('sm')]: {
+            padding: '0 3rem',
+            width: '50%',
+            justifyContent: 'end',
+        }
     },
     title: {
         fontSize: theme.typography.h4.fontSize,
@@ -41,7 +45,11 @@ export const styles = makeStyles((theme) => ({
     },
     contactInfo: {
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        width: '100%',
+        [theme.breakpoints.up('md')]: {
+            width: '50%',
+        }
     },
     logo: {
         height: theme.spacing(3),
@@ -63,7 +71,12 @@ export const styles = makeStyles((theme) => ({
         justifyContent: 'left'
     },
     text: {
-        fontSize: theme.typography.h6.fontSize
+        fontSize: theme.typography.h6.fontSize,
+
+    },
+    whatsappButton: {
+        width: theme.spacing(20),
+        backgroundColor: '#51c960'
     }
 
 }))

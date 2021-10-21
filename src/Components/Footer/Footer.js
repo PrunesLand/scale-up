@@ -16,12 +16,12 @@ const Footer = () => {
                         <img src={whatsapp} alt="whatsapp logo" className={classes.icon} />
                         <img src={instagram} alt="instagram logo" className={classes.icon} />
                     </Box>
-                    <Typography>+62 000 000</Typography>
-                    <Typography>@scaleupOfficial</Typography>
+                    <Typography>+62 856 9229 3738</Typography>
+                    <Typography>@scaleup.official</Typography>
                 </Box>
                 <Box className={classes.linkWrp}>
                     <Typography>Made By:</Typography>
-                    <Typography>PrunesLand</Typography>
+                    <Typography  ><a href='https://github.com/PrunesLand' rel="noreferrer" target='_blank' className={classes.github}>PrunesLand</a></Typography>
                 </Box>
             </Box>
             <Divider />

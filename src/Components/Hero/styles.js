@@ -30,7 +30,7 @@ export const styles = makeStyles((theme) => ({
             margin: '0 15rem',
             textAlign: 'center',
         },
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.between('sm', "md")]: {
             fontSize: theme.typography.h4.fontSize,
             margin: '0 5rem',
             textAlign: 'center',

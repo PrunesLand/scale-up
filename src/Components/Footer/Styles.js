@@ -32,5 +32,12 @@ export const styles = makeStyles((theme) => ({
         paddingRight: theme.spacing(1),
         paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(1)
+    },
+    github: {
+        color: theme.palette.secondary.main,
+        textDecoration: 'none',
+        '&:hover': {
+            color: theme.palette.primary.main
+        }
     }
 }))

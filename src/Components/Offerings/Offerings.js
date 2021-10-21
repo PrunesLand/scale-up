@@ -23,6 +23,7 @@ const Offerings = () => {
                                     <Typography className={classes.cardTitle}>{item.title}</Typography>
                                     <Divider />
                                     <br />
+
                                     <Typography className={classes.cardDesc}>{item.description}</Typography>
                                 </CardContent>
                             </Paper>
