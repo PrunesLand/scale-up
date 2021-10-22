@@ -3,7 +3,7 @@ import { Box } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import { styles } from './Styles'
-import logo from '../../Images/logo.png'
+import logo from '../../Images/logo.svg'
 import { Link } from "react-scroll";
 import { RiMenu5Line } from 'react-icons/ri'
 import iconLogo from '../../Images/iconLogo.svg'

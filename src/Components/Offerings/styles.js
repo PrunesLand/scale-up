@@ -7,9 +7,7 @@ export const styles = makeStyles((theme) => ({
         flexDirection: 'column',
         textAlign: 'center',
         justifyContent: 'center',
-        [theme.breakpoints.up('lg')]: {
-            height: '100vh'
-        },
+        padding: theme.spacing(2),
         background: theme.palette.secondary.dark
     },
     card: {
@@ -24,7 +22,7 @@ export const styles = makeStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
-
+        flexWrap: 'wrap',
         [theme.breakpoints.up('lg')]: {
             flexDirection: 'row',
         }
