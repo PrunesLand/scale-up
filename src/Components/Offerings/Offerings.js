@@ -15,14 +15,14 @@ const Offerings = () => {
             <Box className={classes.cardWrp}>
 
                 {items.map(item => (
-                    <Box style={{ padding: '1rem' }} key={item.id}>
+                    <Box style={{ padding: '1rem 0' }} key={item.id}>
                         <Fade delay={parseInt(`${item.id}00`)} left>
                             <Paper className={classes.card} elevation={12}>
                                 <CardContent className={classes.content}>
                                     <img src={item.image} alt={item.alt} className={classes.images} />
                                     <Typography className={classes.cardTitle}>{item.title}</Typography>
                                     <Divider />
-                                    <br />
+
                                     <Typography className={classes.cardDesc}>{item.description}</Typography>
                                 </CardContent>
                             </Paper>
