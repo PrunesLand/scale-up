@@ -13,18 +13,24 @@ export const styles = makeStyles((theme) => ({
     card: {
 
         background: theme.palette.common.white,
-        minHeight: theme.spacing(50),
-        maxHeight: theme.spacing(50),
-        maxWidth: theme.spacing(60),
+        minHeight: theme.spacing(45),
+        maxHeight: theme.spacing(40),
+        maxWidth: theme.spacing(50),
+
+        [theme.breakpoints.up('md')]: {
+
+            maxHeight: theme.spacing(50),
+            maxWidth: theme.spacing(60),
+        }
     },
     cardWrp: {
-        display: 'flex',
-        flexDirection: 'column',
+        display: 'grid',
+        gridTemplateColumns: 'auto',
         justifyContent: 'space-around',
         alignItems: 'center',
-        flexWrap: 'wrap',
-        [theme.breakpoints.up('lg')]: {
-            flexDirection: 'row',
+
+        [theme.breakpoints.up('md')]: {
+            gridTemplateColumns: 'auto auto',
         }
     },
     content: {
